@@ -1,0 +1,148 @@
+--11-May
+In python
+for can have else.
+When break is not provided and range gets exhausted, the else statement will get executed.
+if break gets executed else does not.
+
+for n in range(2, num // 2 +1):
+  if num
+
+While can also have an else: construct.
+It is not available in other languages 
+
+page 32 of material
+
+assignment 1
+take numbers infinitely until user enters 0 and print the average
+donttake negative numbers.
+if user enters negative number, ignore and move to the next
+continue can help
+
+assignment 2
+accept 2 numbers and display common factors between them. ignore 1 and itself
+
+test input 10, 20
+2 and 5 only because 10 we dont consider
+
+--assignment 3
+accept 3 numbers and display the largest of 3 numbers
+-- assignment 4
+accept the kind of object 1 for circle, 2 for rectangle, 3 for square
+and then take necessary input to calculate area of the object. 
+
+codecheck.io has interesting
+test banks for java, python, c++
+check assignments
+
+
+-- Data Structures
+a) string
+s = "Python"
+s[0] will give 'P'
+s[5] will give 'n'
+we dont have array concept in python. Closest is list
+
+s[-1] will give n in the word Python
+
+it is called negative indexing. 
+s[-3] 3rd character from the end
+strings in python are immutable. Means u cannot modify strings
+s[0] = 'p'
+-- 11 May end
+--Start 12-May
+String structures
+s = 'Python'
+
+s[:-3] means -- going upto -3
+s[:3] will give first 3 characters
+hty
+s[-3::-1] -- htyP
+slicing works on other data structures also
+String is like a collection and hence  iterable
+for c in s:
+print(c)
+
+Ass1
+Accept a string from user and check whether it is valid product code? Valid product code is made of 2 alphabets followed by 4 digits.
+Ass2
+Accept main string and substring and display where the substring is present in main string? All positions where it is present
+Ass3
+Accept a string and display how many upper case letters the string has.
+
+s.count('do') will count the occurances of the substring in it
+s.index('do') will give position of he first occurance of the string
+s.find('did') will return -1 if the string is not found else the position. 
+but if we write s.index('did) it raises error if the string is not found
+s.strip() will remove leading and trailing spaces
+
+Page 40
+list is a data structure
+A list is a collection of values. Can use slicing and indexing
+list is iterable like string
+List is mutable
+string is not mutable
+l.insert(0,5) will insert 5 at 1st position
+List can be heterogeneous
+l = [1,'abc',True,10.2]
+len(l) will giv u number of items
+l.remove(3) will remove 3rd element in the list
+names = [] -- empty list
+names.append('Python')
+'Java' in names -- will return True if Java exists in names
+
+Ass 4
+Accept numbers until user enters 0 and display numbers in sorted order. Clue -- use list.sort()
+
+pop always returns the last value of the item. pop removes the item from the end l.pop(i)
+-- End 12 May
+
+--Start May 13
+tuples
+List comprehension
+Assignment 1
+
+
+aCCEPT NUMBERS UNTIL 0 IS GIVEN AND DISPLAY ALL EVEN NUMBERS IN SORTED ORDER FOLLOWED BY ODD NUMBERS IN SORTED ORDER
+
+Assignment 2
+
+Accept a string which contains a list of numbers separted by comma and display the average of the numbers.
+75,80, 30, 78
+
+
+Nested lists
+Nested lists
+n1[1][1]
+students =
+
+Assignment 3 
+Understand the difference between append ane extend
+
+Tuple is not a list. It is a collection. But importantly it is ummutable
+t = (1,2,3)
+type(t)
+Remember parantheses are used in lists
+t = () -- empty tuple
+t = (1) is not a tuple with 1 element in it
+t = (1,) -- tuple of 1 value
+unpacking
+
+t= (10,20)
+a,b = t
+print(a,b)
+10,20
+a,b = [1,2]
+a,b = "ab" -- is also an example of ab
+
+pyhon tricks book -- same author website
+realppython.com -- real python tutorial
+look at quizzes
+
+enumerate function gives both element and index. Gives 2 values as 1 object/unit
+For that we need to use Tuple
+
+
+--End May 13
+
+-- Start May 14
+sets
