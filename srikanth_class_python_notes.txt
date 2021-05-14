@@ -162,3 +162,17 @@ put words in sorted order
 
 -- ass 3
 accept 2 strings and display the characters of the first string that are present in the second string. Maintain order of characters in the first string. Order of characters should not be changed in first string
+
+
+dictionary is a collection of keys and values
+in Java -- it is called a Map
+d = {1:10, 2:30, 3:25}
+d[1]
+d[4] gives error
+new key d[4] = 40
+possible to modify value for existing key
+
+d.items() gives tuples
+
+-- Ass4
+Accept name and phone number until END is given and display names and phone numnbers in the ascending order of the names
