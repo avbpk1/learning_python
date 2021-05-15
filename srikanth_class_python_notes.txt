@@ -176,3 +176,13 @@ d.items() gives tuples
 
 -- Ass4
 Accept name and phone number until END is given and display names and phone numnbers in the ascending order of the names
+
+------Start 15 May
+Continue on sets and dictionary
+
+-- Assignment 5
+Enhance program to support multi phone numbers for the same customer. if the same phone number is original, ignore that.
+
+-- Beyond Basics in git hub. Search for it for unit test in srikanth/prgagad
+
+Dictionary Comprehension -- page 52
