@@ -186,3 +186,10 @@ Enhance program to support multi phone numbers for the same customer. if the sam
 -- Beyond Basics in git hub. Search for it for unit test in srikanth/prgagad
 
 Dictionary Comprehension -- page 52
+
+-----Start 17-May
+Functions -- takes input in the form of parameters or arguments. They could be optional. And returns value. Which is optional again. When function does not return any value it is called returns, null.
+2 Assignments
+No specific naming conventions required for function names unlike in other languages like c# . In c# fpr e.g - camel case - PrintTable and in java it is it is pascal case.
+If a parameter has a default value assigned, it is called a default parameter
+----End 17- May
