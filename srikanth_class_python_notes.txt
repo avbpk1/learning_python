@@ -191,5 +191,6 @@ Dictionary Comprehension -- page 52
 Functions -- takes input in the form of parameters or arguments. They could be optional. And returns value. Which is optional again. When function does not return any value it is called returns, null.
 2 Assignments
 No specific naming conventions required for function names unlike in other languages like c# . In c# fpr e.g - camel case - PrintTable and in java it is it is pascal case.
-If a parameter has a default value assigned, it is called a default parameter
+If a parameter has a default value assigned, it is called a default parameter -- c and java dont support default parameters
+
 ----End 17- May
