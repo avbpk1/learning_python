@@ -193,4 +193,20 @@ Functions -- takes input in the form of parameters or arguments. They could be o
 No specific naming conventions required for function names unlike in other languages like c# . In c# fpr e.g - camel case - PrintTable and in java it is it is pascal case.
 If a parameter has a default value assigned, it is called a default parameter -- c and java dont support default parameters
 
+# 1) Create a function that takes a number and displays its factors
+# 2) Create a function called print_table which takes the number and length and prints a table for the numbers
+
+# 1) Create a function that takes a number and displays its factors
+def display_factors(number):
+    factors = [x for x in range(1,(number//2)+1) if number%x == 0]
+    print(factors)
+display_factors(20)
+
+# Create a function called print_table which takes the number and length and prints a table for the number
+
+def print_table(number,length):
+    for i in range(1,length+1):
+        print(f"{number} X {i} = {i*number}")
+
+print_table(26,20)
 ----End 17- May
