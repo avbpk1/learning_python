@@ -1,3 +1,24 @@
+--Start 18th May
+Variable arguments means , multiple values can be passed. After *messages -- the rest of the parametera are kw(keyword) only parameters
+e.g
+def wish(*names, message = 'Hi'):
+    pass;
+wish("Scott,"Mark","Larry",message="Hello") -- data type for *names will be tuple -- it is heterogenous. 
+print() -- has varying arguments, and keyword only parameters.
+Exploring the libraty and what features of the language are supported is important.
+Only one multiple variable is possible in the arguments. Not multi. 
+
+def f1(p1, *values, p2):
+  pass:
+def f1(10,20, p2 =1 )
+*names is available in other languages such as Java, C
+
+---Keyword only parameters
+Parameters to be passed always using a keyword. No positional parameters.
+def wish(*,name,message): -- The * at the beginning indicates kw(keyword) only parameters
+
+
+-- End 18th May
 --11-May
 In python
 for can have else.
