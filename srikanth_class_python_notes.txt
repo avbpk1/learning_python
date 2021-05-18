@@ -16,9 +16,64 @@ def f1(10,20, p2 =1 )
 ---Keyword only parameters
 Parameters to be passed always using a keyword. No positional parameters.
 def wish(*,name,message): -- The * at the beginning indicates kw(keyword) only parameters
+1 advantage is it allows the creator to change the parameters order without impacting the users
+Disadvantage is parameter names and positions cannot be changed
+
+--Position only parameters/arguments -- Recent feature -- added in 3.8
+def wish(msg,name, /):
+  print(msg,name)
+  
+wish("Hello","Mark") 
+wish(name="Bill", msg="Hi") will throw an error
+gives flexibility to change the names of the variables by retaining the positions
+
+Functions are typically expected to return a value
+
+def factorial(n):
+  pass
+ 
+ def iseven(n):
+     return n % 2 == 0  # -- returns True or False
+   
+During run time When ever the function encounters the word return, the value will be returned and the function will be terminated.
+
+def isprime(n)
+  for in range(2,n//2 + 1):
+      if n % 1 == 0:
+         return False
+  return True
 
 
+-- Ass 1
+Create a function that takes a string and returns the number of uppercase letters the string has.
+-- Ass 2
+Create a function that takes a number and returns True if it is a palindrome.
+-- Ass 3
+Create a function that takes a string and returns all digits of the string as another string -- getdigits("Ab12Y2B") should return '122' as a string
+-- Ass 4
+Create a function that takes a number and an optional parameter - returns the smallest and largest fators of a number. -- factors(50) should return 2 and 25 -- requires to be returned as collection because you cant return multiple values. facotrs(13) should return None, Nome or [1,13' or give the function an option  e.g. factors(13,returnNone=True)
+
+Look at inbuilt function sorted
+
+Look at zip() also -- for position only parameters
+
+---kw_arguments example
+def display(**kwargs):
+  for k,v in kwargs.items():
+     print(k,v)
+  -- In the above case , (**kwargs) -- is a dictionary
+ display(a=10, b=20, name = 'Point") --
+ display(r=10, x=10, y = 20) --
+ 
+ def show(*args, **kwargs
+ show(10,20,name="Point")
+ 
 -- End 18th May
+
+-- Start 19th May
+How to pass a function as a parameter to another function.
+
+-- End 19th May
 --11-May
 In python
 for can have else.
