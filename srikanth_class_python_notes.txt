@@ -1,3 +1,64 @@
+-- Start 20 May
+sorted and map 
+
+-- end 20 May
+-- Start 19 May
+How to pass functions as parameters. 
+Only functions that return a boolean can be used in this cases 
+
+Python does not support overloading functions. -- Java, C, C++ , c# support over loading
+
+You cannot create 2 functions with same name.
+#Example
+def add(a,b):
+    retunr a + b
+    
+def add(a,b,c):
+  return a + b + c
+  
+The above gives an error. The reason is that the second assignment 
+
+add
+overloading.py for example
+
+Python is not a great oop (object oriented programming). Best programming lang for foundation oop is Java.
+A function can be called only after creation. and not before. 
+
+
+--- Passing function as a parameter
+def iseven(n):
+    return n % 2 == 0
+def number_type(num, func):
+  if func(num):
+      print("Yes")
+  else:
+      print("No")
+number_type(10, iseven) # remember dont put ()
+
+def ispalindrome(n):
+   return str(n) == str(n)[::-1
+
+def number_type(num, func):
+   if func(num):
+      print("Yes")
+   else:
+      print("No")
+number(10, ispalindrome)
+
+
+filter
+
+--Ass1
+select prime numbers from a list of numbers using filter
+
+-- Ass2
+select strings that contain a special character using filter -- c# from ['Python','java','c#']
+
+-- Ass3
+select strings that contain more than 2 upper case letters.
+
+-- End 19 May
+
 --Start 18th May
 Variable arguments means , multiple values can be passed. After *messages -- the rest of the parametera are kw(keyword) only parameters
 e.g
