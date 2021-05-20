@@ -1,7 +1,56 @@
 -- Start 20 May
-sorted and map 
+sorted gives the value map object gives the object 
+--map gives only the map object(object address) and not the actual value
+the way to extract values is as blow
+numbers = map(extract_number,codes) -- map_demo.py
+
+example where the map can be used is -- convert a list to integers before adding
+data = ["45,56,55,89","22,22,33,44","81,68,80,75]]
+
+marks = map(int,m.split(","))
+print(sum(marks))
+
+-- ass 1 -- even numbers by 10 and odd numbers by 5 -- and sort them
+-- ass2 - Sort a set of names by length after stripiing spaces. 
+
+
+
+--ass 3 
+fix the problem to error
+data = ["45,56,,89","89,66,88,75","81,68,80,75"]
+
+for m in data:
+   marks = map(int, m.split(","))
+   
+   print(sum(marks))
+ 
+map is going to convert each and every value to some thing and it has to be specified
+-- ass4 -- use map to extract all alphabets from each string in a list. Use map and a function
+e.g
+['Ab12c','x12y2']
+result should be 
+'Afc'
+xyz
+--- map, filter and sorted functions
+
+-- Sort dictionary by value -- how
+
+d = {1:10,3:5, 2:30, 4:15}
+--below is sorting on keys
+for k, v in sorted(d.items()); -- items is giving a list of tuples -- considers first element of tuple which is the key
+    print(k,v)
+-- below is sorting a dictionary by values
+
+def get_value(t):
+    return t[1] --- returns the second value of the tuple -- t[0] returns key
+for k,v in sorted(d.items(), key = get_value):
+  print(k,v)
+
+
+Lambda expression
 
 -- end 20 May
+
 -- Start 19 May
 How to pass functions as parameters. 
 Only functions that return a boolean can be used in this cases 
