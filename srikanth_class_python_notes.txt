@@ -1,3 +1,30 @@
+--Start 21 May
+-- sort dictionary by val
+where ever you need a function u can use lambda
+
+d = {1:10,3:5,2:30,4:15}
+
+for k,v in sorted(d.items(), key= lambda t: t[1]):
+    print(k,v)
+
+used for simple expressions
+lambda can be used for replacing a function
+
+-- sort_lambda.py
+Lambda is used for small functions
+ -- Fix error assignment
+ can be done with either list comprehension or filter
+ 
+ marks = map(int,filter(str.isdigit),m.split(",")):
+ 
+ --- Assignment enhancement -- if negative numbers are there, they also should be included -- consider it. data = ["45,56,abc,89","89,66,88,75","81,-10,80,75"] -- marks_list_v2.py -- improvement required is subtract negative nunbers from the above code
+
+In case of c -- every thing is pass by value -- if we have to pass values by reference, we use pointers
+In python , everything is pass by reference 
+In Java -- all primitive types are passed by value -- objects by reference
+ 
+--End 21 May
+
 -- Start 20 May
 sorted gives the value map object gives the object 
 --map gives only the map object(object address) and not the actual value
