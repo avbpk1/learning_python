@@ -12,6 +12,27 @@ for m in data:
     marks = map(int, filter(str.isdigit, m.split(",")))
     print(sum(marks))
     
+ -- Module
+Module is a collection of code and functions. It is  a .py file
+A module can have a set of functions only which can be imported into other modules and then the functions can be accessed from there
+--new folder -- mylib
+math_funs.py -- 
+use_math.py
+
+import math_funs as mf # mf is the alias. Alias is not mandatory
+from math_funs import ispalindrome --# is another way of importing but only as a single function -- page 69 of course material
+from math_funs import ispalindrome, iseven --# is another way of importing but 2 functions
+
+print(mf.ispalindrome(101)) 
+
+when importing any executable code from the module is executed
+this can be controlled. 
+What if the modules are not in the same folder
+How to run the module directly from the command prompt?
+
+create a module of functions
+count of number of upper case
+whether it is valid number
 -- End 22 May
 
 --Start 21 May
