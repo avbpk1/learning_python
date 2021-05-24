@@ -1,3 +1,59 @@
+-- start 24 May
+dunder -- double underscore
+Invoking vs Importing
+
+If _name_ == '_main_': # Invoked -- otherwise it is imported
+
+import sys
+print(sys.path) # module search path
+
+import math_funs as mf
+from 
+
+sys.path.insert(0,r'c:\classroom\may6\demo\stlib') -- remember ' should be bach quote -- this is only for this program. It is not permanent
+
+--for permanent change , set the PYTHONPATH variable
+If u dont want this to be executed for every program -- the PYTHONPATH variable can be set to include the list of folders where modules are created
+
+SET PYTHONPATH = c:\dev\python;c:\dev\projects 
+sys.path.append(r'
+
+--If we need to run from command prompt
+\\> python factors.py will run the program
+
+-- fun\factors.py -- how to receive parameters at the command line -- use import sys -- more about os , less about python 
+
+-- scheduling can be done on the programs -- e.g. sending messages on birthday
+
+-- Assignment 1
+Create something similar to a table -- table.py -- display the number of times the user is input -- number is must , length is optional -- 20 should be default. Run it from operating system. If number is not given, then it has to stop with a suitable message
+>python table.py 
+-- Assignment 2
+> python validate.py Abc123_yx xyz 123y -- take strings and determine whether it is a valid password or not. Multi parameters. -- password rules atleast 1 uppercase, 1 special , 1 digit and min 6 chars.
+
+-- Assignment 3
+Take input from user if the user is has not provided inputs via the command line
+Page 74 -- using command line arguments
+--- end of assignment
+
+Getting info about modules
+> python
+>>> import math_funs
+>>> dir(mf) will list all members of the module -- includes variables, predefined list and user defined funs] -- predefined members start with __. For e.g. __cached__
+>>> help(mf.iseven) -- help 
+
+>>> help(len) -- gives info about the function -- page 75
+
+if u want to give documentation in your own funs -- use """    """ -- anything between the 2 triple double quotes is the help content
+
+
+-- new demo folderstlib
+in c -- first compile, generate exe -- so key word required to run it. exe is platform dependent. If it is required for mac -- it has tbe generated separately
+in java -- first compile -- it will give .class and .class needs to be give to jvm
+python -- to be given to .py -- .py is given to the interpreter
+
+-- End 24 May
+
 -- Start 22 May
 # This program should have the ability to add numerics only from a list. First hyphen should be treated as -ve sign
 
