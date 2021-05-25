@@ -1,3 +1,43 @@
+-- Start 27 May
+OOP
+-- End 27 May
+
+--start 25 May
+--- packages 
+usestlib.py
+
+from stlib import math_funs as mf
+
+print(mf.iseven(n))
+if u try to import every thing from package, it does not import
+stlib.py -- pg 77 
+validatepassword.py
+
+-- instead of simply saying -- not a valid password -- message should indicate the failre reason. Give exact info i.e. a descriptive message. You can create a function hwer u eturn a string and none if every thing is fine.
+Any invalid password indicating what is the actual problem
+
+pypi.org -- python package index. Place where libraries related to python are available. Reposotory of python packages
+
+PYPI -- python
+Maven -- Java
+NPM -- JS
+Nuget -- .net
+you can think of them as appstore in mobiles
+
+e.g -- search for requests
+
+>pip  [python install packages] -- pip is in scripts folder (pip or pip3)
+--boto3 is to communicate to aws 
+--Django -- jango framework
+pip list will give list of packages
+pip show requess
+
+Requires : -- parameter will show dependencies and when you install , the dependencies will also be automatically installed.
+Required By: indicates the packages that are dependent on the current one.
+
+
+-- End 25 May
+
 -- start 24 May
 dunder -- double underscore
 Invoking vs Importing
