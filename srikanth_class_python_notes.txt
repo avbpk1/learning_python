@@ -1,7 +1,67 @@
+
 -- Start 27 May
 OOP
--- End 27 May
+-- Constructor is nothing between __(dunder - double underscore)
+creating classes is all about creating methiods . If it is init -- creating the requisite attributes
 
+
+Name Mangling. By creating an attribute with a __ -- the intention is to express that it is a private variable. Althought it can be accessed from outside, it should not be done. It is not complete full proof. So nothing is private. If the intention is to make it private, never access it from outside.
+-- example student.py
+
+look at the screen shots for each step 
+* important thing is to avoid hard coding -- example getdue(self) -- avoid return 5000 .
+How do you avoid it.
+Course Fee is applicable for all students.
+ Best way is to store it in the class i.e. class attribute rather than object attribute. -- first line -- corurses = {'python' }
+ They are called static attributes or class attributes
+Object attributes are created/repeated for every object.  Class attributes are created for every Class.
+
+def getfee(course)
+    return student.courses[course] 
+
+** The above is called static method.  -- @staticmethod -- line is called decorator or metadata. Changes the behaviour of the function. Very important concept for advanced programming. This is to inform it is static method. It is called with out the class name unlione others
+
+line print(student.getfee('ds')) # call static method
+--- Always use the function instead of directly calling the dictionary i.e. courses dictiomary in this example
+-- In OOP , thje whole focus is on the design of the program. What classes you create, what members should it have. Whether you require data access
+-- you can also initialise the coourse in def getfee(course='python') if required.
+
+--- Assignment
+In the account class, add a static variable called minimum balance.  Use this variable in withdraw. Dont allow the user to withdraw unless the min balance is maintained. Also provide a method that allows to find out what is the minimum balance. 
+--page 82 one more example 
+@staticmethod referred to as decorator. They are called with object name. listen to audi
+-- Class method -- time.create()  -- where class is used as a parameter and create an object. ex
+-- class method is also called factory method which means a method which creates an object.  . Not every class sghhould have it. Page 83. Listen to aud 27May
+Instance Method, Static MEthod, Class Method comparision
+
+--> Mostly instance methods are used. followed by static methods and then class methods. Class methods are used rarely.
+
+--One more example
+Understand howt to compare objects of a class
+-- person example
+class Person:
+   def __init__(self,name,age):
+      self.name = name
+      self .age = age
+  
+  def __str__(self)
+      return f"{self.name} - {self.age}"
+      
+p1 = Person('Bill',30)
+print(str(p1))
+
+print (p1) -- gives an unmeanningful message. Every time you print an object, it is converted ti a string
+
+-- To get a meaningful message. Create a special method called str.
+
+
+-- Assignment 2 -- Do the abover for both account and student
+ --- Keep adding the above to every class you create
+
+--End 27 May
+
+
+-- Missed 26May class
 --start 25 May
 --- packages 
 usestlib.py
