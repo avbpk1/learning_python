@@ -1,3 +1,57 @@
+--- Start 28 May
+------------codecheck.io -- gives sample code site
+def__str__(self):
+   return f"(self.mname) - (self.age)
+def __eq__(self,other):
+
+p1 = PErson   
+
+
+for all the relational operators -- page 86 -- special methodds 
+basically when you say -- 
+p1 == p2  -- it will try to compare address of p1 and p2. Similarly for p1 > p2, p1 <p2 
+
+def__gt__(self,other):
+     return self.age > other.age 
+     
+Looking at sorting example. By default  sorted function is sorted on name.  if u want it on age 
+try comparing 2 student objects. MAy be based on name.  -- depends on requirement. PRactice. Repetition is important.
+
+Built in Functions related to attributes
+refer to screen 43.png, 44.png, 45.png
+there are 4 default functions 
+getattr, hasattr, delattr, setattr  -- page 84
+
+Built in class attributes
+
+__dict__, __main__
+
+There is always some base functions.next sect() 
+
+go back and enhance
+
+--> Create a class called Time and in this time class -- Hours , mins and secs are required. OVer ride __eq__, lt, str. In addition support "next_sec"-- there is no ++ operator.
+-- screen 48.png for above. nextsecond() previoussecond(). MAke sure the range for hr, m, s are maintained i.e.0-23, 0-59, 0-59. 
+-- Also provode __sub__(). -- e,.g secs = t1 - t2 -- no of secs in between these two -- screen 49 . Implement subtraction
+
+-----> What is a property and how to create a property.
+--Refer to  get_category function in person.py
+simplify it by giving p1.category -- looks like an attribute but executes some code. If that is what is required, then we have tocreate a property
+For this -- you create the previous line as 
+@property
+Property -- when a property is referred -- it looks like an attribute but executes a function. The function which returns value. To do it we have to decorate with @property.
+--decorators key word. -- 052.png screen
+There are 2 types of properties -- read only. Properties can have assignments also. -- 53.png. @name.setter -- 54.png. Java does not have support for properties. c# also does not ahve. Python supports it using property decorator, setter decorator
+
+-- When ever you define a class, a number of things have to be thought about design, for example -- what methods, what properties.
+
+------Inheritence
+Python is powerful because it supports multiple inheritence. Java and C# dont support. C++ supports
+-- assignment -- 55.png
+
+-- End 28 May
+
+
 
 -- Start 27 May
 OOP
