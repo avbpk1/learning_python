@@ -1,6 +1,44 @@
--- Start 31 May
-Multiple inheritence.  Python and C++ support. Very important discussion. 
+-- Start 01-Jun--
 
+
+--End 01-Jun
+
+-- Start 31 May
+inhdemo.py
+Every object we create should be close to a real thing
+Person is super class. We do not want an object for person and hence make it as an abstract. Person class is marked as abstract as we dont create an object for that.
+Studen and Employee are subclasses. We can create objects of Student but not PErson.
+#Abstract Class
+class Person(ABC):
+
+
+
+Doctor -- example
+
+Doctor is the main class
+
+RDoctor Consultant are subclasses from doctor
+72.png and 73.png
+getsalary() abstract method in salary
+
+Surgeon is an extension of Consultant -- multi level  inheritence example
+
+--------- Multiple inheritence.  Python and C++ support. Very important discussion. 
+
+To create sub class C from 2 different classes -- A and B 
+
+Whenever there is a sub class version that should be considered and not the one in superclass. 
+
+Order of inheritence is important 
+class C(A,B):
+   pass           --- if the class is found in the first super class it stops there . If it doesnt find then it will go the next one. 
+ --- As an extra -- in C# -- it is called virtual base  
+--Look at multi level examples
+--- 78.png -- example  A is a super class of B . Everything in A is inherited into B. And hence that is given priority over C
+
+mro() -- method resolution order. Every class is derived from order object
+mro is tricky
+MRO blog from ST
 
 -- End 31 MAy
 
