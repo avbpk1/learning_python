@@ -1,4 +1,37 @@
 -- Start 01-Jun--
+1) Assignment -- look at diagram
+
+2) Take 5 numbers from user and display total for 5 numbers. While taking numbers -- if there is any invalid input -- make sure to handle it. Dont let program crash
+If user enters abc -- ignore abc and move forward.  -- 009.jpg
+
+v1 -- ignore invalid input
+
+v2 -- invalid input ignored but user should still enter 5 numbers.  -- 10.png
+super().process() -- super internally uses mro -- so dont use it in multiple inheritene
+
+e.g. call_mul_methods.py
+
+super will result in object
+
+
+A.process(self) -- this is an object of C
+B.process(self)
+
+where ever there is a need for superclass , it is possible to pass a subclass. Because subclass is an extension of superclass.
+--same concept with constructors also.
+---Java does not support multiple inheritence -- to avoid the non-ambiguity approach.
+
+--Check Multiple inheritence examples from python repository
+
+---No overloading , polymorphism in pythong because it is interpreted language. It is built in
+
+----What is exception and how to handle it?
+Type of errors
+Syntax Error 
+Runtime Error -- also called as Exceptions -- Dangerous -- they stop the program -- crash it 
+Logical Errors
+
+
 
 
 --End 01-Jun
