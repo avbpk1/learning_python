@@ -1,45 +1,32 @@
-# class Stack_Iterator:
-#     def __init__(self, data):
-#         self.data = data
-#         self.pos = len(data) - 1
-#
-#     def __next__(self):
-#         if self.pos < 0:
-#             raise StopIteration
-#
-#         v = self.data[self.pos]
-#         self.pos -= 1
-#         return v
-
-
 class Stack:
-    def __init__(self):
+    def __init__(self, stack_len = 2):
         self.data = []
+        self.max_len = stack_len
 
-    def push(self, value):
-        self.data.append(value)
-
-    def pop(self):
-        return self.data.pop()
-
-    def peek(self):
-        return self.data[-1]
 
     @property
     def length(self):
         return len(self.data)
 
-    # def __iter__(self):
-    #     return Stack_Iterator(self.data)
+    def push(self,value):
+        self.data.append(value)
+        if s.length > s.max_len:
+            print(f"Stack Full! A Max of {s.max_len} can be accepted")
 
+    def pop(self):
+        try:
+            return self.data.pop()
+        except Exception as ex:
+            print("Stack Empty Error: " , ex)
 
-s = Stack()
+# Testing
+s = Stack(stack_len=2)
+#Stack full error
 s.push(10)
 s.push(20)
-
-# Use iterator to get all values from Stack
-for v in s:
-    print(v)
-
-print(s.pop())
-print(s.peek())
+s.push(30)
+#stack empty error
+s.pop()
+s.pop()
+s.pop()
+s.pop()
