@@ -1,3 +1,36 @@
+-- Start 02-Jun
+exxception assignment discussed. 
+-- continuing with exception handling
+3 scenarios
+1)
+a) 012.png
+
+
+2) 13.png
+
+3) 14.png, 15.png
+program abruplty stops and options to recover.
+
+
+--- if somebody is deposting negative value, then it becomes a error. Transaction Amount should be greater than or equal to 1. If it is 0 or less then raise error
+
+Assignment 3 -- stack -- 8.png
+Assignment 4 -- stack 2 -- 19.png -- 
+Stack -- LastInFirstOut -- LIFO -- 21.png
+
+Exception is a predefined class. Every exception is derived from an Exception Subclass
+user defined exception is a 
+
+create a class called stack. MEthods Push and POP. Raise Stack Empty error.
+internally use a data structure like list. Give a try.
+
+
+listen and 
+account.py is now with exception handling 
+when you report an exception via a print statement -- then it will let user continue
+raise ValueError("Insufficient Funds!
+-- End 02-Jun
+
 -- Start 01-Jun--
 1) Assignment -- look at diagram
 
