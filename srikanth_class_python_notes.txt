@@ -1,3 +1,80 @@
+--Start 03 Jun--
+Assignment feedback
+MAke sure that raise an exception instead of printing the Error.
+Also the max length -- make sure that it is not defaulted to 10 -- set it to None to acept unlimited values. Only when length 
+
+-- peek is also added
+
+-----Iterator and Generator
+iterator is a type in python
+
+l = [1,2,3]
+li = iter(l)
+
+--Above li is type of iterator and l is list. We can call methods associated with li. for .g
+
+str(a) is same as saying 
+
+page 109 -- diagram
+
+iterable -- __iter__()
+Iterator __next__() -- provides next value in the iterator till it gets exhausted and returns an error
+
+How do you identify an object to be an iterator?
+
+for n in l: -- # l should be iterable
+functions like -- sorted also internally uses iterator
+
+iterable is a container for values. The job of an iterator is to provide one value at a time
+
+-- creating customer iterable and iterator
+-- 30.png
+def__iter__(self) -- iterator and iterable are 2 different classes
+---what makes it as iterator is def__next__(self): method
+Look at page 110 of course material
+-- Stop Iteration Error
+
+dunder iter method is mandatory to make a class iterable __iter__(self)
+
+The job of the iterator is to take a value from a list and return it
+
+-- 2 steps
+define iterable. Iterable and Iterator are 2 main elements of an iterator class
+
+--Range class is an iterable -- range is a function that returns an iterable
+
+r = range(10)
+type(r)
+<class 'range'>
+ri = iter(r)
+type(ri)
+<class 'range_iterator'>
+
+THE GENERATOR
+meant to generate values -- pg 111
+
+Unlike iterator where you need to create a class to generate values -- generator is much simpler
+How to create and use it.
+-- generates values
+steps are - -create a function which yeilds values (not return)
+--yield is the keyword
+-- generator concept is lazy -- it will give values on request and is lazy -- not eagerly
+
+you can create a generator to generate any set of values.
+
+
+-- assignment
+create a generator that takes start and end and returns all palindromes in between those 2 numbers
+gen_palindrome
+
+
+-- in generator -- yield must be given
+-- iterator
+range is internally an iterable. When object is iterable , it is able to take values ane iterates
+
+
+-- End 03 Jun
+
 -- Start 02-Jun
 exxception assignment discussed. 
 -- continuing with exception handling
