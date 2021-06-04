@@ -1,3 +1,47 @@
+-- Start 04-Jun
+Efficiency of generator -- llok at screen shpots 32,33,34
+
+list vs gen comparision 
+gen does not store any thing in memory - it only activates when requested. Where as in list, it is stored im memory.
+
+generators are not subscriptable
+you cant reuse a gen i.e. one's it generates a value, you cant go back.
+35.png is the version of list as opposed to generator
+generator is not a data structure.
+
+There is nothing called -- tuple comprehension.
+37 screen 
+
+-- Decorators, deep copy, function parameter unpacking, -- these are more advanced concepts to be understood later
+-----------Libraries - Very Imp --
+-- File Handling
+--DAta can be obtained from files, datbase, rest api or website from all 4 sources
+
+-- Create a file and take data from file
+-- In general -- 3 steps for file
+a) Open, Read or Write , Close
+
+--python file handling
+# PRint contents of topics,txt
+f = open("topics.txt","rt") # -- rt --read text-- text file is a file that contains text characters. Image and Voice files are binary files.
+for line in f.readlines():
+   print(line) 
+#38.png screen -- explains that a list is being provided.
+f.close()
+
+f.readlines() is not always necessary because it creates a list. Sometimes you can read only what ever is required. 
+
+when you read a line, it reads the line along with a newline character and hence it displays an extra line
+print() by default prints a new line.
+2 ways to deal with it
+print(line.strip()) or print(line,sep='')
+-- display lines in sorted order, removing duplicates -- 39,40
+-- Assignment 
+1) Accept a file name from user and display the files after removing white space and converting file to upper case. Removing leading and trailing spaces and convert it to uppercase
+2) Accept a file and display the words in the file in sorted order
+
+
+-- End 04 Jun
 --Start 03 Jun--
 Assignment feedback
 MAke sure that raise an exception instead of printing the Error.
