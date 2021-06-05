@@ -1,3 +1,42 @@
+-- Start 06 June --
+Serialisation
+OS and SIT
+-- End 06 June
+
+-- Start 05-Jun
+sort_emails.py -- example
+--wt -- open file in write mode.
+
+-- Display department name and average salary --dept_avg_salary.py
+-- file structure is -- 
+f = open("employees.txt","rt") # read text
+for line in f:
+  parts = line.strip().split(",")
+  name = parts[0] -- name is the first part i,e dept
+  salaries = parts[1:] -- to get the rest of the salary values
+----------2 ways to extract i.e. a list comprehension and map.
+-- map is dynamic i.e. only will call as required and does not store it in memory. list comprehension occupies memoru
+  salaries = [int(v) for v in parts[1:]]
+  #salaries = map(int,parts[1:])
+  total = sum(map(int,parts[1:])) -# taking each part and converting to integer and then the sum 
+  avg = total /(len(parts) - 1)
+  print(f"{name:15}{avg:10.2f})
+
+-- making programs fault tolerant
+ue map and filter to handle empty salary values
+e.g.
+salaries = map(int, filter(str.isdigit,parts[1:])) -- salaries is map object -- map is a lazy function
+total = sum(salaries) -- this is where map object gets executed. -- just for understanding
+
+salaries = [int(v) for v in parts[1:] if v.isdigit()] -- list comprehension instead of map -- this will take care of the numeric parts. list is eagerly executing 
+
+--- Assignment
+Modify the program to accept a float value as currently is_digit ignores float values
+
+If dept occurs twice -- 44.png -- how to handle multiple values for the same department.
+
+
+--End 05 Jun
 -- Start 04-Jun
 Efficiency of generator -- llok at screen shpots 32,33,34
 
