@@ -1,6 +1,65 @@
+-- Start 07 Jun-- 
+json
+
+
+end --07 Jun
+
 -- Start 06 June --
-Serialisation
-OS and SIT
+--Serialisation
+--OS and SIT
+
+--dept_avg_salary
+-- page 116 - course material
+--dept_avg_salary2 for code
+49.png
+
+-creating a dictionary.
+Take a value and extend it
+if name in depts:
+   depts[name].extend(salaries)
+else
+  depts[name] = salaries -- add new dept with salaries -- this data type i.e. list has to be same as given in above
+  
+ -- dept_avg_salary_v2.py
+ --Assignment 1
+ Take 2 files i.e. file 1 and file 2. Perform intersection of files. Get all lines that are present in both file 1 and file 2. Try union and minus also.
+ 
+ -- Assignment 2
+ Take a file which has blank lines and remove them.  REad every line into the list -- read only all nonblank lines. After reading them right back into the same file. 51.png
+ Read and write back to the same file
+ 
+ -- potential data loss in case of abnormal shutdowns. Because opening a file in write mode, will wipe out the data in the file first before writing.
+ -- also not suitable for large data sets
+ 
+ 2nd technique -- write all non blanks into temp.txt. At the end of it close both files and rename the temp file - 52.png
+
+Serialisation and Deserialisation 
+In Python -- Serialisation is called Pickle
+Deserialisation is called Unpickling
+
+Serialization is about preserving data.
+
+Serialisaiton is a technique used in Data science -- ML Modelling --if  54,55.png handled properly , we cant write data back
+Block 4 is hwere you serialize
+
+3 different possibilities to store the object into a
+
+a) Binary -- internally in bytes -- where we want to reconstruct the data straight away
+b) copy the entire object in xml -- not so much in use
+c) copy the entire object as json. If we want to transfer data from one point to another -- 
+
+PICKLE -- Python object serialisation
+Library is called PICKLE
+
+import pickle 
+-- open the file in a binary mode using option of "wb"
+
+f= open("person.data","wb")
+-- course notes 118. Pickle or serialisation is the technique. pickle is the name of the function and dump is the method
+
+dump and dumps for pickling    -- dumps writes bytes into an object and not a file
+load and loads for unpickling   -- loads reads bytes from an object and not the file like load
+
 -- End 06 June
 
 -- Start 05-Jun
