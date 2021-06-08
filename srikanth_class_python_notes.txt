@@ -1,10 +1,110 @@
--- Start 07 Jun-- 
+-- Start 08 Jun-- 
 json
+# Removing blank lines 
+lines = []
+with ope("names.txt","rt) as f: # -- this is called opening the file with context -- gets closed automatically
+   for line in f:
+     if len(line.strip()) > 0:
+         lines.append(line) # at this line, the file gets closed automatically
+
+with open("names.txt","wt") as f:
+    for line in lines:
+       f.write(line)
+
+-- In python , complex code can be rwitten in compact
+----------JSON--------
+json -- format in which you can store some data and can also be transferred. 
+json stands for java script object notation
+JSON
+
+{"Name": "Product1","Price":10000,""qty":7}
+[{--},{..},...] -- array of json objects
+
+dynamo db and mongodb are json object based databases. They are called no sql databases
+They are called items. Some call them as documents, some call them as items
+
+In python it resembles dictionary -- dictionary and json are interconvertible
+
+class Product
+    def __init__(self,name,price):
+       self.name = name
+       self.price = price
+    def __str__(self)
+        return f"(self.nae} - {self.price}"
+        
+def createFromDict(cls,source:dict): -> Product        
+        
+p = Product("PowerBeats Pro",21500}
+json.dumps(p.__dict__)) -- converts dictionary to json
+json.dumps(p) # returns a json object  -- converts 
+      
+-- convert json backs into a product
+
+p = json.loads(jsonstr) # loads converts json back to dictionary -- visually dictionary and json look same -- in d
+print(p)
+
+-- normal instance methods, static methods, class methods
+
+class method is a factory method
 
 
-end --07 Jun
 
--- Start 06 June --
+convert a dictionary object to a product object
+with a method
+
+-- look at 61.png
+json_demo.py  -- source:dict -- is just a hint -- it helps in identifying -- not making any logic change  
+@classmethod
+def createFromDict(cls,source:dict):
+
+there is a tool called mypy. Using that we are able to check wheter we are following hints or not. 
+
+python is dynamically typed. There are attempts to make it statically typed. Dynamically typed languages have pit falls. python is trying to add the statically typed. java, c# is etc are static typed language
+
+--62.png is giving the steps to converting dictionary back to json
+Good design method to create class methods and classes fromt hat
+json_demo.py
+
+-- 64.png
+array of json objects derived from a list of dictionaries
+--example in 120 converts each contact to dictionary by map function
+
+--- import sys,
+-- sys.path
+
+sys.getsizeof() -- gives the bytes that the object occupies
+
+SYS MODULE
+OS MODULE
+os module interacts with operating system module.
+allows you to interact with os 
+
+-- remove blank lines -- option 2 -- rewritten differently
+
+without using lists now. Using temporary file
+
+import os
+source = "names.txt"
+target = "temp.txt"
+
+with oper(source,"rt") as sf, open(target,"wt") as tf: # open names in read and write to tempt.txt -- s is source, t is target
+       for line in sf:
+              if len(line.strip()) > 0:
+                  tf.write(line)
+os.remove("names.txt"
+# rename target as source
+os.rename(target,source)
+
+---walk method gives -- very interesting -- gives a generator object
+files = os.walk(r"c:\classroom\may6\demo\oop") # r stands for raw string -- means it will ignore any meaning for e.g. u dont need to escape the \ 
+type(files)
+<<class 'generator'>>
+next(files) 
+-64.png gives details of structure
+
+end --08 Jun
+
+-- Start 07 June --
 --Serialisation
 --OS and SIT
 
@@ -60,7 +160,7 @@ f= open("person.data","wb")
 dump and dumps for pickling    -- dumps writes bytes into an object and not a file
 load and loads for unpickling   -- loads reads bytes from an object and not the file like load
 
--- End 06 June
+-- End 07 June
 
 -- Start 05-Jun
 sort_emails.py -- example
