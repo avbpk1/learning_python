@@ -1,3 +1,52 @@
+-- Start 10 -Jun
+RE Module
+
+--End 10-Jun
+
+-- Start 09-Jun
+
+067.png 
+
+70.png
+71.png
+72.png
+73.png
+
+Assignment
+search inside the file. Search file content. list must -- 78.png
+I want to know all the python files where the content inside the file contains list 80.png -- listen audio also -- it is simple -
+--open the file, read the file, check whether it is found in the content. -- 82.png -- look at the highlighted blue area
+search string is mandatory , starting file is optional
+
+-- display the file name followed by the line number where the search string sorted is presented.
+
+
+-- Short Circuiting -- 76.png
+
+Python real world usage -- look at 86.png, 87.python -- 88.png
+realpython.com
+facebook is 80Million lines of code - -
+--Python -- script
+
+--Regular Expression 
+Regular expression is a string with meta a.k.a special chaaracters. They are meant to search whether a pattern is present in a given string. 
+e.g. "[A-Z]+" indicates upper case pattern
+"[*+/:-]" if any of these are characters are present then it is a match -- 89.png screen shot gives examples
+when you enclose any thin gin square brackets -- it is searching for a list of things 
+if there are no square brackets -- then it indicates -- search at the beginning
+^A -- search for A at the beginning
+0$ -- search for 0 at the end
+[A-Z]+ 1 OR MORE
+[A-Z]? Zero or mone
+[A-Z] Zero or one
+\w+   one or more word chjar
+\s -- one or more white space
+\S  -- one or more non-white space
+[0-9]{4} search for 4 occurances
+[0-9]{2,5} -- search for 2 to 5 occurances
+
+Usage -- RE Module
+--End 09-Jun
 -- Start 08 Jun-- 
 json
 # Removing blank lines 
