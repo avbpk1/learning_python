@@ -1,5 +1,74 @@
 -- Start 10 -Jun
 RE Module
+import re
+re.search(r"\d","abc123") # gives the Match Object which gives the position
+match
+Difference between search and match is that match only searches at the beginning
+re.match(r"\d","abc123") #returns null
+re.fullmatch(r"\d","abc123","sdfs123") #returns null #checks if the entire string is a match
+re.fullmatch(r"\d","abc123","123") #returns a match #checks if the entire string is a match
+05.png -- look for various examples
+
+-- split
+re.split(r"\d+","Abc1Xyz3443Pqr")
+['Abc','Xyz','Pqr']
+06.png -- \W+ search for bon word characters
+
+re.findall(r"\d+","Abc1Xyz3443Pqr") # splits
+['1','3443']
+07.png
+if you are using -(hyphen) , use at the end as it is a range
+
+--Substitute -- sub
+>>re.sub(r'\d+','0','abc122xyz443') 
+'abc0xyz0
+--if every version of number has to be replaced then dont give +, just give d
+re.sub(r'\d','0','abc122xyz443')
+'abc000xyz000'
+8.png
+>> re.sub(r'\W+',' ','This     is    to,   test') #replaces non word spaces -- very important
+'This is to test'
+-- The above can be used for example in the data prep activities for data science. 
+09.png
+--Groups. In regular expression , we can have groups
+-- e.g first 2 aplhabets and the removing digits in example product code pd3456
+>>> re.fullmatch(r'[a-z]{2}\d+','AE3844')
+10.ong -- last lines examples about groups
+example use case for grouping 3 different groups from dates -- year , month ,day ,
+Note the match object will have the different groups
+
+-- Exercises
+1) Accept a file and display how many characters , words and lines the file has
+2) Assume we have a file called contacts , and in contacts we have the name of the person and mobile number. We dont kno how they are exactly separated. In some cases, they are treated by comma and in some cases a space used. Some times the mobile can come in front of name. Try to group it based on digit and name.
+Display , name and mobile numbers sorted by name.  -- expected output 12.png
+--use regular expression
+--self -- try splitting a json object into an individual topic
+
+-- The DATETIME Module
+Either import date time module
+or the 4 classes individually -- date, time datetime, timedelta
+>> from datetime import*
+>>> d = date(2021,1,1)
+>>>d
+>>>datetime.date(2021,1,1) shows that this is a date
+>>>cd = date.today() ##current date stored in day
+>>>cd - d 
+datetime.timedelta(days=160) # result is the number of days
+>>> cd + timedelta(days = 10) # gives a date by adding 10 days. timedelta is an object
+
+Library is something to remember and memorise -- which will help. and can only be achieved via usage and practive
+>>> cd.isoforamt() 
+'2021-06-10' -- returns date in iso format
+>>> cd.strftime("%d-%m-%Y") # will give the date formatted in the specified format
+
+>>> ct = datetime.now() # datetime is a module, datetime is a class in module.
+13.png
+>>> strptime # ptime means parsing -- if we convert string to date -- it is called parsing. The reverse is called formatting. strf
+
+
+
+
+
 
 --End 10-Jun
 
@@ -22,7 +91,7 @@ search string is mandatory , starting file is optional
 
 
 -- Short Circuiting -- 76.png
-
+te
 Python real world usage -- look at 86.png, 87.python -- 88.png
 realpython.com
 facebook is 80Million lines of code - -
