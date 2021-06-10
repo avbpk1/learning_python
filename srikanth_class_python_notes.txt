@@ -1,3 +1,13 @@
+-- Start 11-Jun
+Multi Threading and Request Library (used to make http request)
+
+Beautiful soup -- web scraping
+
+Data Access
+
+
+-- End 11-Jun
+
 -- Start 10 -Jun
 RE Module
 import re
@@ -33,16 +43,17 @@ re.sub(r'\d','0','abc122xyz443')
 --Groups. In regular expression , we can have groups
 -- e.g first 2 aplhabets and the removing digits in example product code pd3456
 >>> re.fullmatch(r'[a-z]{2}\d+','AE3844')
-10.ong -- last lines examples about groups
+10.png -- last lines examples about groups
 example use case for grouping 3 different groups from dates -- year , month ,day ,
 Note the match object will have the different groups
 
--- Exercises
+[[[[[[[[[[[[-- Exercises
 1) Accept a file and display how many characters , words and lines the file has
 2) Assume we have a file called contacts , and in contacts we have the name of the person and mobile number. We dont kno how they are exactly separated. In some cases, they are treated by comma and in some cases a space used. Some times the mobile can come in front of name. Try to group it based on digit and name.
 Display , name and mobile numbers sorted by name.  -- expected output 12.png
 3) customers.txt has name and date of birth in name, DD-MM-YYYY
-Display the name of the customer and age in years. Display the same date in the order of name and descending order of date. Tip -- you will need to convert DD-MM-YYYY into a date object.
+Display the name of the customer and age in years. Display the same date in the order of name and descending order of date. Tip -- you will need to convert DD-MM-YYYY into a date object.  refer 14.png
+-- think how to make it fault tolerant -- give some invalid date. Do you handle it or ignore it and move forward]]]]]]]]]]
 
 --use regular expression
 --self -- try splitting a json object into an individual topic
