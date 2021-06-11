@@ -22,6 +22,24 @@ Beautiful soup -- web scraping
 Data Access
 --Thomas freedman books -- world is flat, thank you for being late -- good books -- beirut to jerusalem another book
 
+How salkan built khan academy? -- podcast
+
+--Multi Threading
+
+e.g. -- in chrome each tab is a thread
+-- in parallel some downloads happen -- multiple threads
+--15.png
+
+--How to create a new thread in python
+--Create a thread class derived from thread
+Im;port thread
+16.png
+
+17.png -- page 138 of course material
+
+prime numbers example
+
+each prime number will be processed separately.
 
 -- End 11-Jun
 
