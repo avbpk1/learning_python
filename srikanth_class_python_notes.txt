@@ -1,9 +1,26 @@
 -- Start 11-Jun
-Multi Threading and Request Library (used to make http request)
+-- assignment discussed
+customers.txt is input and list_customers.py
+name = m.group[0].strip() -- will throw error for blank lines.
+addressed by the lines
+
+If m is none:
+   continue:
+Dictionary object wil replace the old number
+
+-- assignment1 doe 12-Jun - change list_customers.py -- dont ignore customers with the same name.
+
+-- assignment 3 from 10-jun discussed
+list_layers.py, players.txt
+
+
+--Multi Threading and Request Library (used to make http request)
+
 
 Beautiful soup -- web scraping
 
 Data Access
+--Thomas freedman books -- world is flat, thank you for being late -- good books -- beirut to jerusalem another book
 
 
 -- End 11-Jun
