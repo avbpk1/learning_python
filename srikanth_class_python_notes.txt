@@ -1,5 +1,88 @@
+-- Start 14-Jun
+
+
+-- End 14-Jun
 -- Start 12-Jun
-Request Module
+REST API - Stands for REpresentational State Transfer. 30.png, 31.png
+REST API is also known as Web API and presents data in Json, XML and Text. 
+If XML is returned then it requires parsing.
+APIs that rethrn JSON
+
+REST API is just returning the data unlike WEbsite which returns HTML
+public-apis.io/free-apis
+
+Example -- github
+
+api.github.com/users/srikanthpragada -- This example gives a json. 
+
+Remember this gives only raw data. Does not dictate presentation
+-- pypi.org/project/requests
+
+sometimes from pycharm you may find the programs are not executing. The reason is that the python interpreter is different
+
+33.png
+requests.get returns a response object
+response object
+resp.status_coe gives a status code. e.g. status_code = 400 means , then the url or the user is not found
+
+resp.txt -- will give text received from server
+json 
+
+resp.json will return data in the form of a dictionary
+
+-- demo program
+git_user_info
+
+for some of them, you have to authenticate
+some times we have to give -- application key. This will enable in for e.g. track the count of requests and then this can be charge. Otherwise, it could lead to denial of service
+
+openlibrary.org/dev/books/api
+
+oauthh - open authentication is one form of authentication
+
+currency exchange
+
+github.com/public-apis/public-apis#currency-exchange
+
+inr_to_usd.py
+
+inr = int(input
+
+remember -- response will be in json
+convert that to dictionary
+
+-- Main -- github.com/public-apis/public-apis
+Try -- country and weather report -- weather-api
+
+restcountries.eu/rest/v2/all -- it is a list of json objects
+
+list_countries.py
+
+In this example -- countries is a list of dictionarues
+
+for c in countries()
+   print(f"{c['name']:50} - {c['capital']}")
+   
+ # list top 10 countries by area
+ --pseudo code  -- firs sort the dictionaries -- key lambda
+ 
+ for c in sorted(countries, key = lambda c: c['area'], reverse=True)[:10]:
+ top_10_large_countries.py
+ 
+ Assignment -- Display top 10 countries by density of population -- how many people are there per sq km . Population/area
+ 
+ -- other user cases include -- grouping of data using --
+ 2) Display top 3 large countries in each region -- requires usage of panda -- 35.png
+ 
+ If the data we get in josn -- it is easy to convert into a dictionary or a list of dictionaries
+ 
+ If the response is in xml or html? 
+
+36.png -- we can chose the response type -- look at example in the screen shot
+
+
+if the response is in html or xml -- then we need to parse -- that is what beautiful soup is used.
+
 
 -- End 12-Jun
 
