@@ -1,7 +1,78 @@
 -- Start 14-Jun
+Beatuiful Soup
+This is all about HTML and XML
+
+-- parsing data in HTML example
+bs = BeautifulSoup(html_doc,"html.parser")
+
+>>>bs.find(id='link1')
+
+crummy.com/software/Beautiful_Soup/ -- refer 37.png, 38.png, 39.png
+40.png -- shows screen shot how to overcome the keyword class i.e. we have to use class_
+>>> links = bs.find_all('a')
+>>> links is a list of tags
+
+>>> for t in links:
+      print(t['href'])
+      if 'href' in t.attrs:
+          print(t['href']) # - t is a class
+-- Web Scraping Program
+--list web site links from srikanth technologies
+
+import requests
+from bs4 import BeautifulSoup
+
+website = "http://www.srikanthtechnologies.com"
+
+resp = requests.get(website)
+if resp.status_code != 200:
+print(s"sorry")
+exit()
+
+bs = BeautifulSoup(resp.text,'html.parser')
+
+links = bs.find_all("a") # extracting anchor elements
+
+for t in links:
+  print(t['href'])
+#The output of the above gives some relative or full blown links. If it is relative, below code will help in adding the full blow elements
+
+
+for t in links:
+   href = t['href']
+     if href == '#' # This code is to ignore any thing which has a hash at the end ashas does not really do any thing
+         continue: 
+     if not href.startswith("http"):
+         if not href.startswith("/"):  # This will take care of links which dont start with / and if we start with / 
+            href = website + "/" + href
+         else
+            href = website +  href
+print(t['href'])
+
+You can write a program to identify any broken links
+--list_broken_links
+-- extend above program
+
+#check whether link is valid
+resp = requests.get(href)
+if resp.status_code == 404
+   print(href) # broken link
+--think of multi threading to run this faster 
+make it more generic
+aws cli is built using python
+python link_broken_lists.py url -- 41.png -- as a utility
+
+-- Go to Sriknaht technologies and find out when next python bath is starting -- see how to access this? 42.png -- how to access tabke
+
+
+   
+
+
 
 
 -- End 14-Jun
+
+
 -- Start 12-Jun
 REST API - Stands for REpresentational State Transfer. 30.png, 31.png
 REST API is also known as Web API and presents data in Json, XML and Text. 
