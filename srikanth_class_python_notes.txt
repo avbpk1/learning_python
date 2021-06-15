@@ -1,3 +1,27 @@
+-- Start 15 Jun
+Web scraping is a bit fragile because it is dependent on the info that the website provides.
+#finding next python batch program -- get_next_python_batch.py
+--pseuedo code -- go to srtikanth technologies.com -- show source code. Identify the location of the table
+-identify the table
+if you have to fill in authentication details -- it has to be via a post request.
+
+--If the format is xml as opposed to html
+-- example courses.xml -- list_courses.xml
+# In the above example, we are not getting data from any web site 
+--Look at 43.png for different types of supported parsers
+--Make sure lxml is installed if you have to use xml parser
+-- rss -- stands for really simple syndicate.
+--realy python.com -- nice articles, quizzes
+--Look at 44.png, 45.png, 46.png
+-- for the demo purposes -- sqlite is being used. sqlite does not require any installation
+
+-- python created DB API  -- contains connection and cursor -- 47.png -- pg 144 for course material
+
+--sqlite studio -- download . This is the gui for sqlite
+ 
+
+-- End 15 June
+
 -- Start 14-Jun
 Beatuiful Soup
 This is all about HTML and XML
