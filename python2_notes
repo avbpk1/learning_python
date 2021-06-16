@@ -10,4 +10,9 @@ There is no overloading concept in python. It is completey overriding.
 
 --look at 64.png for more clarity
 
+Jun 16 -- Assignments
+1) create a function that takes a collection/list of numbers and returns variance of the list. -- Ask google what variance means
+2) Create a function that takes a string and returns number of uppercase letters and lowercase letters. Should return 2 values -- find out best way to return 2 values.
+
+
 End 16 Jun
