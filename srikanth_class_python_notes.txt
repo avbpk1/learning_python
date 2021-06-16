@@ -1,3 +1,47 @@
+-- Start 16 Jun
+--49.png -- sqllite architecture
+
+import sqlite3
+
+-- new module -- dbutil
+DBNAME = r"c:\classroom\may6\hr.db
+
+import dbutil
+
+try:
+   con = sqlite3.
+   
+insert_employee.py
+
+insert command with parameters -- 50.png 
+Note the way parameters are specified -- they are different for different databases. For e.g. -- for oracle it is :1, :2, :3 etc. 
+Make sure that the changes are committed. Also at the end , close the cursor, close the connection
+cur.execute-- is like Execute immediate
+
+ blog on how to connect mysql and oracle
+ 
+ in python based -- apis -- commits have to be explicit and can be rolled back. 
+ 
+ in some jdbc type of connections to some of the databases - commits are explicit but not in python.
+
+-- update_slaries.py
+-- The above program shoes how to read data from a file and update the database.
+
+db_to_json_py
+-- main simple statement is -- json.dumps(employees))
+
+-- look at dbapi
+
+json_to_db.py
+the reverse is also possible -- read json and insert into db.
+employees = json.load(f) -- this will given an array of dictionaries
+xml can also be read and processed similar to the above
+
+-- for xml processing -- beautiful soup must be used--
+52.png
+
+-- End 16 Jun
+
 -- Start 15 Jun
 Web scraping is a bit fragile because it is dependent on the info that the website provides.
 #finding next python batch program -- get_next_python_batch.py
