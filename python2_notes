@@ -1,3 +1,11 @@
+--Start 17-Jun
+Functions as parameters
+function_as_params.py -- look at 74.png
+
+
+
+--End 17-Jun
+
 Start 16-Jun
 *args, **kwargs -- this combination will help in taking many poistional parameters and also many key word parameters
 
@@ -12,7 +20,7 @@ There is no overloading concept in python. It is completey overriding.
 
 Jun 16 -- Assignments
 1) create a function that takes a collection/list of numbers and returns variance of the list. -- Ask google what variance means
-2) Create a function that takes a string and returns number of uppercase letters and lowercase letters. Should return 2 values -- find out best way to return 2 values.
+2) Create a function that takes a string and returns number of uppercase letters and lowercase letters. Should return 2 values -- find out best way to return 2 values. --Tip -- use tuple to return 2 values i.e. return(cnt1,cnt2)
 
 
 End 16 Jun
