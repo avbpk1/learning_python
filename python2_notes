@@ -1,8 +1,50 @@
+-- Start 18 Jun
+Sorted function -- very powerful along side, filter, map and sorted
+
 --Start 17-Jun
 Functions as parameters
 function_as_params.py -- look at 74.png
 
+3 Standard Functions where functions are used as paramerers -- very important -- filter_demo.py
+Fiter -- function that takes a value and returns boolean 
 
+Note string is an iterable i.e. each character in string is an element.
+
+
+for n in filter(ispositve, nums)
+
+filter2_demo
+
+Assignment 1
+Use Filter to select all the strings that contain a space. Take a set of strings and display the string if it contains one or more spaces.
+Assignment2
+Use filter to select all prime numbers from the given list of numbers. -- remember the first argument fn should return a boolean
+Assignment 3
+USe filter to select valid product codes. [cod1, code2, code3] -- first letter is an alpabet , second is a number., third is a alphabet. IF first and last letter are alphabets, then valid produt code
+
+Assignment 4 --
+v1
+Use map to convert a set of strings that contaitn digits to floats and then calculate the total
+['123','456','789'] should return 123 + 456 + 789
+v2
+If some of them are not convertible -- treat them as 0
+
+
+map means mapping
+
+map function
+
+map_demo.py
+
+map is an extremely power fnction -- 75.png
+map(func,iterable) unlike filter which expects func to return a boolean -- it returns another value
+It does not give a list. it will give one value at a time and is called a lazy function. So, where map is used, it has to be used in a loop to get all values out.
+It does not eagerly do it. IT does lazily
+
+If you try to assign a map output
+lengths = map(len,names)
+print(lenghts) will return  
+<map object at 0x00sdfsdf>
 
 --End 17-Jun
 
