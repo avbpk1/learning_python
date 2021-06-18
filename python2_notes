@@ -1,5 +1,29 @@
 -- Start 18 Jun
+Remember -- when a function does not have explicit Return for False conditions - it will return None which is equivalent to False
+
 Sorted function -- very powerful along side, filter, map and sorted
+
+80.png
+
+nums = [-10,10,45,-6,7]
+for n in sorted(nums, key = abs):
+prnt n;
+
+-- Assignment
+1) Assume a list of strings which may contain numbers and non numbers and display sum of the numbers. -- clue -- use filter and pick up numbers and sum them.
+2) Assume a list of values where you have the product name and price separated by comma (81.png) and display these strings in the descending order of price. Remember name need not be a singgle char. ASsume price is integer
+3) Assume a list of marks in the form of strings ["30,35,45","55,60,60","-,-"] etc. Total the marks and return each i.e.
+110
+175
+...
+4)  Find out whether we are passing the address of the value or the value in case of pythong -- 82.png.
+
+In Java -- for standard parameters it is pass by value. For object -- it is pass by reference
+
+
+lambda functions
+
+
 
 --Start 17-Jun
 Functions as parameters
