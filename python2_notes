@@ -1,3 +1,57 @@
+-- Start 19 Jun
+85.png, 86.png
+pass_parameters.py
+
+passing parameters by reference -- address and not value
+if an immutable object is passed, like for e.g. integer -- it does not change the value, instead creaetes a new address for it
+
+
+If a mutable object is passed -- for e.g. list -- 87.png, 88.png
+
+l = [1,2,3]
+def addfirst(lst,value):
+   
+Everything is passed by reference i.e. address not by value
+
+formal parameter changing by actual parameter will depend on whether the object is mutable or immutable
+
+Assignment 1
+Create a function that takes a list and a value to delete and delete all the occurances of that value from that list
+lst = [10,20,30,20,50]
+delete(lst,20) -- should remove 20 from the list
+
+Assignment 2
+Create a function that takes a list and interchanges first 3 values with last 3 values
+[1,2,3,4,5,6,7] should result in [7,6,5,4,3,2,1] -- 7 and 1 are interchanged, 6 and 2 are interchanged and 5 and 3 in this example
+
+Assignment 3
+Create a function that 
+
+
+list_products.py -- 
+
+---Local Functions is a function that is inside another functuon -- 89.png
+
+g = 100 # these are global variables and can be accessed from all functions
+def f1():
+    ev = 10 # this is called enclosing variable and can be accessed from inside the local function.
+    #Local function or nested function
+    def f2():
+        nonlocal ev # if this nonlocal keyword is specified, you are saying you want to make use of ev from the parent function. 
+        global g -- similarly global is a keyword
+        ev = 0
+        lv = 100
+        print(lv,ev)
+
+when you create an enclosing variable in a local function  -- 90.png, 91.png
+nonlocal ev -- nonlocal is a key word to indicate to use envlosing variable 
+
+order of creation
+is there a local variable, if not then enclosing variable, if no enclosing, then it will check global variable, if it is not global, then it will look into built in variable
+
+--Next Topic is 
+-- End 19 Jun
+
 -- Start 18 Jun
 Remember -- when a function does not have explicit Return for False conditions - it will return None which is equivalent to False
 
