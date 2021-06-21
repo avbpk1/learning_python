@@ -62,18 +62,15 @@ decrypt function --
 #lst = [10,20,30,20,50]
 #delete(lst,20) -- should remove 20 from the list
 
-lst1 = [10,20,30,20,50]
-print(lst1)
 def del_element(lst,dval):
-    for i in range(0,len(lst),1):
-        if lst[i] == dval:
-            print (lst[i])
-            lst.remove(dval)
-            print(lst)
+    for elm in lst:
+        if elm == dval:
+            lst.remove(elm)
     return lst
 
-del_element(lst1,20)
--- End 20 Jun
+lst1 = [10,20,30,20,50]
+lst2 = del_element(lst1,20)
+print(lst2)-- End 20 Jun
 
 -- Start 19 Jun
 85.png, 86.png
