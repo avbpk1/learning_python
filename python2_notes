@@ -1,5 +1,62 @@
 -- Start 20 Jun
 Modules
+-- Modules can have statements and functions. It is possible to use module in another module. By way of importing . And then we can invoke those functions. 98.png
+- str_funs.py in modules folder
+import can have an alias. 
+e.g. 
+import str_funs as sf
+
+from str_funs import count_upper
+
+When ever you refer to a module , you are still referring to the module. All the code will be executed. It is not a good idea to run the code while importing the module. This is to be
+executed only when invoke the module.
+
+Modules can be imported. -- During import, we dont want to code be executed
+Modules can be run. 
+To do that 
+
+print(__name__) -- double underscore -- all pre-defined name start with double underscore or dunder.
+returns __main()__
+
+if we invoke module directly , the name of the module is is __main__()
+if we import the module , then module is imported and the name is str_funs
+
+differentiate between invoking and importing
+
+How to invoke/import modules from a different directory - 99, 100.png
+
+Only those defined in the module search path will be included.
+sys.path variable controls it
+
+It is important to know how to run the program from command line
+factorial.py
+101.png -- how to make use of or accept parameters from command line -- sys.argv -- list
+sys.argv[1] is the first parameter and always the function name -- in command python.py 15
+dont proceed if the input is not available. -- factorual.py example
+
+-- Assignment 1 
+Enhance Factorial Program 
+
+python factorial.py 7 10 15  should display factorial for each number
+i.e.
+Factorial 7
+Factorial 10
+Factorial 15
+
+-- Assignment 2
+
+Create python ValidatePassword.py xyz where xyz is the password parameter
+-- Must have one or more uppercase
+-- must have digit
+-- Must have a @, !, *
+-- Must have min 6 chars
+
+-- Assignment 3
+Create a module called Encrypt with following functions 
+encrypt -- takes a string and returns another string . Change the ascii code of the characters 
+decrypt function -- 
+
+
 
 #Create a function that takes a list and a value to delete and delete all the occurances of that value from that list
 #lst = [10,20,30,20,50]
