@@ -1,6 +1,21 @@
 -- Start 20 Jun
 Modules
 
+#Create a function that takes a list and a value to delete and delete all the occurances of that value from that list
+#lst = [10,20,30,20,50]
+#delete(lst,20) -- should remove 20 from the list
+
+lst1 = [10,20,30,20,50]
+print(lst1)
+def del_element(lst,dval):
+    for i in range(0,len(lst),1):
+        if lst[i] == dval:
+            print (lst[i])
+            lst.remove(dval)
+            print(lst)
+    return lst
+
+del_element(lst1,20)
 -- End 20 Jun
 
 -- Start 19 Jun
