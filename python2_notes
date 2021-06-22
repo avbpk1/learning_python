@@ -1,3 +1,40 @@
+-- Start 23 Jun
+
+-- End 23 Jun
+
+-- Start 22 Jun
+>>> imp str_funs
+>>> dir str_funs -- will list all functions in that moodule str_funs
+Documentation associated with a modeule
+"""
+aNYT THING ENCLOSED WITHIN THIS Will becom documentation -- below is a skeleton
+desc
+:param
+:return
+
+"""
+REPL needs to be restarted to take efect
+help(str_funs.count_upper)
+-- End 22 Jun
+
+Every folder which has a set of funs can be treated as a package
+-- special file __init__py
+
+__init__py.py
+print('Loading My Package lib')
+
+from mylib import num_funs
+print(num_funs.iseven(10)) 
+----
+Loading package mylib #-- This is from __init__py.py 
+True
+
+from mylib import * -- by default will do nothing unless you add the following in 
+__init__py
+__all__ = ['num_funs']  -- 
+
+
+
 -- Start 20 Jun
 Modules
 -- Modules can have statements and functions. It is possible to use module in another module. By way of importing . And then we can invoke those functions. 98.png
