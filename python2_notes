@@ -1,5 +1,118 @@
 -- Start 23 Jun
+OOP in python
+A method is a function inside a class. So , method has to be invoked only with the object
 
+Where as Functions is a term that is used to to call with any associated object attached to it.
+
+Data amd code are most important elements of any application. 
+OOP is about encapsulating data and code. Data is in the form of variables. Code is in the form of functions. 000.png, 001.png
+
+Encapsulation means putting data and code together. Data should be accesible only to the code.
+
+l = [1,10]  -- list is a class, l is the object . class is like a data type or blue print. 
+l.append(5) --  append is the function 
+What operations can be performed on an object (i.e. l in this case is determined by the functions associated with the class -- list in this case)
+
+Encapsulation , Inheritence
+Summary -- Data amd code are most important elements of any application. 
+Code is like librarian. Data is like books in the library. Analogy.
+
+Use Case -- > Savings Account. To create a class called savings account.
+Standard Naming Convention -- Pascal Case -- First letter of every word is upper case -- 002.png
+
+UML Class Diagram
+|--------------------------------------|
+|SavingsAccount - Class                | 
+|--------------------------------------|
+|acNo                                  | 
+|acName                                |     
+|balance                               | 
+|------------------------------------- | 
+|open(acNo,acName)                     | 
+|deposit(amount)                       | 
+|withdraw(amount)                      | 
+|info()                                | 
+|------------------------------------- | 
+
+class SavingsAccount:
+    # Methods -- functions in a calls are called Methods. Python is a dynamically typed language
+    def open(self,acno,ahname): #self is a special parameter. Self is called This Reference in Java and C#
+        # l = acno -- if you try this instead of self -- l will be a local variable
+        # object attributes -- Object attributes is the term in python , java - instance variables,  c++ data variable
+        self.acno = acno
+        self.ahname = ahname  # self is nothing but an object
+        self.balance = 0
+        
+    def info(self):
+        print ("Account Number : ", self.acno)
+        print("Account holder name : ", self,ahname)
+        pritn("Acciytb Balance: ",self.balance)
+
+    def deposit(self,amount):
+        self.balance += amount ## method is interchangeably used with function
+        
+    def withdraw(self,amount):
+        self.balance -= amount ## method is interchangeably used with function
+        
+a1 = SavingsAccount() # - a1 will be stored in slef
+a1.open(1,"Andy")
+a1.info()
+
+#---below is an example of just creating an object but a2.info() will give error because there are no attributes. attributes are invoked by open()
+a2 = SavingsAccount()           #003.png # Here there is an object without any data.
+a2.info()                       
+
+A better design is something like
+
+a2 = SavingsAccount(1,"Andy") -- this will avoid extra step of open
+print(a1.balance) -- this is allowed in python by default -- this is not allowed in other oop like java, c# etc. This is a case where the data is being accessed directly from outside and not via a function
+                                                          -- the above can be avoided but to be discussed later.          
+ideally -- another function should be written 
+    def getbalance(self):
+           return self.balance  
+
+
+
+
+class SavingsAccount:
+# Constructor IS A SPECIAL METHOD
+
+   def__init__(self,acno,ahname, balance=0):    #Camel Case -- getBalance()
+    # Methods -- functions in a calls are called Methods. Pythin is a dynamically typed language
+    def open(self,acno,ahname): #self is a special parameter. Self is called This Reference in Java and C#
+        # l = acno -- if you try this instead of self -- l will be a local variable
+        # object attributes -- Object attributes is the term in python , java - instance variables,  c++ data variable
+        self.acno = acno
+        self.ahname = ahname  # self is nothing but an object
+        self.balance = 0
+        
+    def info(self):
+        print ("Account Number : ", self.acno)
+        print("Account holder name : ", self,ahname)
+        pritn("Acciytb Balance: ",self.balance)
+
+Constcutor is a definition that is automatically called when ypou create an object
+Constructor is a function that has the same name as the class name. In other languages it is the same
+special method is a method that is not invoked separately. Constructor is a special method. I.e when the object is created -- constructor is automatically called.
+may31\demo\account.py 
+material -- pAGE 79, 80
+
+All operations related to an object should be done using a method
+
+ Unfortunately in Python there is no universal naming convention unlike Java and C#
+ 
+ Normal Methods are to be explicitly called where as Constructor Method is automatically called
+ 
+ --> Assignment 1
+ Create a class that stores student name, course and fee paid.
+ 
+ Create a constructor that takes student name, course and fee paid. Fee paid defaults to 0 and course defaults to "Python"
+ 
+ Provide a method to print all details and another method to process payment of the student. 
+ Assume Valid courses are "C","Java",and "Python" with total fees 3000, 5000 and 4000
+ 
+ Provide a method that returns balance to be paid by students. Skeleton provided in student.py
+ 
 -- End 23 Jun
 
 -- Start 22 Jun
