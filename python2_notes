@@ -1,3 +1,68 @@
+-- Start 25 June
+Static methods 
+-- End 25 June
+
+-- Start 24 June
+-- privATE_demo.py -- name mangling
+How to Restrict access i.e. limit attributes from being accessed directly
+
+self.__age = age # Private attribute
+print(p1.__dict__) will return the dictionary of actual attributes -- even the private variables can be accessed -- for eg. 
+
+print(p1._Person__age)
+
+Private Members(Name Mangling) -- refers to the concept of just the name reference change -- for private variables.
+Python is kind of created for the civilized where users respect the nature of the definition although it is not mandatory
+
+So, if some thing is declared as private, though it can be accessed, the expectation is that it should not be accesssed.
+
+# Special Method  - __str__
+def __str__(self):
+     return f"{self.name} - {self.age}
+
+# Special Method2  - __eq__(self,other)
+def __eq__(self,other):
+     return self.name == self.name and self.age == self.age
+
+Assignment -- Go back to all classes you created , __str__ and __eq__ (dunder eq) is for comparing the objects
+
+# Special Method3  - __gt__(self,other)
+def __eq__(self,other):
+     return self.name == self.name and self.age == self.age
+
+__gt__ or __lt__ is mandatory if we want to sort the custom classes -- equivalent to operator overloading in c# and c++
+
+
+
+-- Create Custom Class and Sort objects of custom class
+class Rectangle:
+    def __init__(self,length,width)
+        self.length = length
+        self.width = width
+   
+    def __str__
+    rect_list = [Rectangle(10,20)
+
+
+take account and student class and create the special methods
+
+
+Ass 3 -- create a stack class 
+methods push - which adds value, pop will return value, peek will return value, empty thje string , length
+
+PYTHON_31_MAY_2021 6_24_2021, 3_23_56 PM.png
+
+PYTHON_31_MAY_2021 6_24_2021, 3_25_49 PM.png
+
+queue -- enque and dequeue
+
+LIFO
+Stack
+
+
+-- End 24 June
+
+
 -- Start 23 Jun
 OOP in python
 A method is a function inside a class. So , method has to be invoked only with the object
