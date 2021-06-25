@@ -1,5 +1,25 @@
+-- Start 26 Jun
+Inheritence 
+
+-- End 26 Jun
+
 -- Start 25 June
 Static methods 
+sort_custom_class.py -- adding 2 rectanbles
+
+--Savings Account
+Use case -- Minimum balance to be maintained
+
+create a variable -- self.minbal = 5000
+
+--> Ass1
+Add tax percentage for student. Consider that at the time of calculating the total fee. -- Think of providing a discount rate. So that you can calculate adding tax and reducing discount
+--Consider how you can change discount from course to course. Discount rate specific to course
+
+--> Ass2 
+
+
+
 -- End 25 June
 
 -- Start 24 June
