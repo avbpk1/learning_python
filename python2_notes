@@ -1,6 +1,39 @@
 -- Start 26 Jun
 Inheritence 
 
+--Suppose I want to implement total fee as an attribute but I want to treat it like an attribute but internally I want it as a process, then it has to be decorated as a property.
+@property
+def totalfee(self)
+    return Student.course_fees[self.course]
+    
+    Other decorators are getter and setter.
+ Decorators can change the behaviour of the class. -- 018.png
+
+#pre defined built in functions for a caclass -- page 85 
+New attributes for an object can be created -- 19,20.png. It is possible to create an attribute without pre-defining it
+
+>>>hasattr(obj,'name') -- returns True of the attribute name exists in the obj
+>>>getattr(obj,'name') -- 21.png
+>>>setattr(obj,'email','abc@gmail.com')
+>>>delattr(obj,'email')
+
+
+Page 92 -- Look at the picture -- Inheritence concept 22.png
+Page 93
+23.png -- Superclass and subclass -- In some prog languages it is called -- Baseclass and derived class.
+Inheritence is a design concept to avoid redundancy and expandable
+
+-- Super is not a key word -- it is a function
+24.png 
+
+--Assignment -- implement picture in pag 93 by createing the person super class and other subclass
+oop players.py -- inheritence example.
+
+--Assignment 2
+Provide getpoints i.e. return points of the player. for both cricketer and footballer. Points are calculated as follows
+For each goal - 1 point. Every 200 runs - 1 point and every 10 wickets 1 point
+Create additional subclass -- Tennis player. No of grandslams.
+
 -- End 26 Jun
 
 -- Start 25 June
