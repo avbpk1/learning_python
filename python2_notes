@@ -1,3 +1,61 @@
+-- Start 27 June
+I want to force every sub class to have ge tpoints
+
+-- players.py
+
+@abstractmethod -- decorator that needs to be imported . When you make a method abstract method, it is an indication that every subclass has to be implemented - overrride
+ABC -- stands for Abstract Base Class
+
+class Player -- 25.png -- diagram 
+
+you have to import ABC class as below
+
+from abc import ABC, abstractmethod
+
+2 important points
+1) Every subclass must override
+2) Player should not be created as an object i.e. No objects for player or student -- only sub classes should be objectable and abstract class , abstract methodes are important. Abstract class is 
+defined by key word ABC
+
+from abc import ABC, abstractmethod.
+class Player(ABC)
+
+---Improvement on previous assignment -- make Person as Abstract class so that Person cannot be created as an object.
+Abstract Methods are to be implemented by all Subclasses -- e.g getpoints in players and occupation in person
+
+2 important functions
+>>>a=10 
+>>> isinstance(a,int) # is instance is a method which compares -- Can be useful to find out what type of object it is 
+True
+>>issubclass(str,object)
+>>True
+
+---------Multiple Inheritence -- Important feature of python
+Multiple Classes
+Multiple Hierarchy
+
+When one class is created from one or more classes -- it is called Multiple inheritence. It is availabe in C++ and Python only. Note -- Java and C# does not have it.
+-- 26.png
+
+-- oop/mi folder
+Demo1 -- 27.png -- diagram -- multiple inheritence -- class derived from multiple classes. Analogy  -- inheriting property from maternal/paternal side
+
+Demo2.py -- 28.png -- If there is a method in subclass that overrides a method in superclass -- it is going to override it. If we have a subclass version -- we shouldnt huse superclass version
+-- 29.png
+
+Demo3.py -- 30.0png -- if process is present in both , then it will try to derive it from the first super class and if it is not there then it goes to the next superclass
+C->A->B -- order of inheritence is important
+
+Demo4.png - 31.png - 32.png - 33.png, 34.png -- has the prder 
+
+Demo5 -- 35.png , 36.png -- gives version of C. Srikant spent a lot of time analysing why it was path D->B->A->C->A and not D->B->A->C->A 
+37.png -- full blown hierarchy
+and it will check if there is any subclass on the right of D. Basic principle is s -- 38.png -- A is crossed out because there is a right of subclass to D and also object is remvoed because of the subclass
+
+
+
+-- End Jun 27
+
 -- Start 26 Jun
 Inheritence 
 
