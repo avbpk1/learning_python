@@ -1,4 +1,9 @@
--- Start 27 June
+-- Start 29 Jun
+Exception Handling
+
+-- End 29 Jun
+
+-- Start 28 June
 I want to force every sub class to have ge tpoints
 
 -- players.py
@@ -52,9 +57,17 @@ Demo5 -- 35.png , 36.png -- gives version of C. Srikant spent a lot of time anal
 37.png -- full blown hierarchy
 and it will check if there is any subclass on the right of D. Basic principle is s -- 38.png -- A is crossed out because there is a right of subclass to D and also object is remvoed because of the subclass
 
+MRO -- MEthod Resoultion Order
+
+call_mul_const.py
+
+Example of how you can call constructor of both super classes -- Calling both the constructors or constructor of both super classes
+when you call it with a class name i.e. A.__init__(self,p1) -- creates a class
 
 
--- End Jun 27
+call_mul_methods.py -- 40.png -- indicating object of C is being passed to A as opposed to A
+
+-- End Jun 28
 
 -- Start 26 Jun
 Inheritence 
