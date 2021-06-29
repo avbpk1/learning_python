@@ -1,6 +1,29 @@
+-- Start 30 Jun
+User Defined Exceotions
+
+Iterators and Generators important concepet
+
+
+-- End 30 Jun
+
 -- Start 29 Jun
 Exception Handling
+44.png -- for various exception scenario flows
 
+45.png
+
+Important of unhandled exceptions -- try block will always execute
+
+All exceptions are classes and derived from Exception -- print("Error:",ex) --
+
+except Exception  as ex: # Exception is a Superclass for all other excepptions - for e.g. ero Division Error -- page 105 of the material
+
+
+
+
+46.png 
+All functions should raise/return an error so that they are fault toleerant
+communicate back that he is not able to finish 
 -- End 29 Jun
 
 -- Start 28 June
