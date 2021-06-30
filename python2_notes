@@ -4,6 +4,31 @@ User Defined Exceotions
 Iterators and Generators important concepet
 
 
+Iterator -- 47.png
+l = [1,2,3]
+li = iter(l)
+type(li), type(l) returns listiterator and list 
+
+49.png, 50.png, 51.png
+page 109 of course material
+
+we can create our own iterators as long as it follows a framework
+
+Anything you need ti create as an iterable, ir requires a specifal method called __iter__
+
+e.g def __iter(self) -- page 108 and 109 of course material
+52.png -- range -- range is also an object of a class called range. 
+
+
+------------Generator
+Generator is simpler than iterator. Internally it is a function and it can generate a value.
+Special Key word -- yield makes it a generator.
+if we have a function which returns a value with the key word yield and not return -- it is called a generator
+generator_demo.py
+
+Assignment 4 -- Create an iterator that takes starting and ending numbers and produces all paindromes in between the numbers -- create 2 classes iterator and iterable.
+
+
 -- End 30 Jun
 
 -- Start 29 Jun
