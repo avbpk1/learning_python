@@ -1,32 +1,20 @@
 -- Start 30 Jun
-User Defined Exceotions
+User Defined Exceptions
+account.py
+
+Class InsufficientError
+
+In the stack -- raise an error STack Empty Error -- User Defined exceptions
+
+Assignment 1 -- Create an exception called StackEmptyError and raise it when you try to pop with empty stack. Even for peek this has to be done. 
+Assignment 2 -- Imagine a stack with predefine capacity. Modify the stack.py to pre-define the capacity . If the capacity is reached and trying to push more, An error StackFullError should be raised
+             -- An enhancement is required
+
+Assignment 3 - Queue class -- enque and deque -- double ended queue -- add first , add last , remove first, remove last methods
+
 
 Iterators and Generators important concepet
 
-
-Iterator -- 47.png
-l = [1,2,3]
-li = iter(l)
-type(li), type(l) returns listiterator and list 
-
-49.png, 50.png, 51.png
-page 109 of course material
-
-we can create our own iterators as long as it follows a framework
-
-Anything you need ti create as an iterable, ir requires a specifal method called __iter__
-
-e.g def __iter(self) -- page 108 and 109 of course material
-52.png -- range -- range is also an object of a class called range. 
-
-
-------------Generator
-Generator is simpler than iterator. Internally it is a function and it can generate a value.
-Special Key word -- yield makes it a generator.
-if we have a function which returns a value with the key word yield and not return -- it is called a generator
-generator_demo.py
-
-Assignment 4 -- Create an iterator that takes starting and ending numbers and produces all paindromes in between the numbers -- create 2 classes iterator and iterable.
 
 
 -- End 30 Jun
