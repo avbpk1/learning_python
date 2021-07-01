@@ -1,3 +1,45 @@
+-- Start 01-Jul
+Debugging Mode
+
+generator expression
+page 112 of course material
+
+ex.g. 
+st = "Python 3.8"
+digits = (ch 
+
+---
+Files
+
+--lib_demo
+
+Assignment -- write emails into a file in sorted order
+
+sorted_emails.py
+53.png  -- the email that is read via the file read is read with the new line character.To get rid of the newline and spaces
+use the strip command
+
+Assignment 2 -- if u have leading or trailing spaces in emails.py -- get rid of them. 
+
+Assignment 3 -- instead of displaying sorted emails onto a screen -- write contents into sorted_email.txt
+
+54.png -- data from prog to bugger to disk diagram -- 55.png
+it is a good idea to close the file. Otherwise there can be data loss.
+
+Reason is data from buffer to disk is written only when the buffer is full or when the file is closed. 56.png
+
+With statement can be used to close the file automatically
+116 page of structure
+
+-- End 01-Jul
+assignment discussion
+SErialization 
+Json
+
+-- Start 02 - Jul
+
+-- End 02-Jul
+
 -- Start 30 Jun
 User Defined Exceptions
 account.py
