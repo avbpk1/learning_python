@@ -20,6 +20,27 @@ sorted_emails.py
 use the strip command
 
 Assignment 2 -- if u have leading or trailing spaces in emails.py -- get rid of them. 
+---Start
+# Take emails from emails.txt and display them in sorted order
+
+f = open("emails.txt", "rt")
+emails = set()
+for line in f.readlines():
+    parts = line.strip().split(",")
+    
+    for email in parts:
+        email = email.strip()
+    emails.update(parts)
+
+f.close()
+
+fw = open("sorted_emails.txt", "wt")
+for email in sorted(emails):
+    fw.write(email + "\n")
+
+fw.close()
+--- End
+
 
 Assignment 3 -- instead of displaying sorted emails onto a screen -- write contents into sorted_email.txt
 
@@ -32,12 +53,12 @@ With statement can be used to close the file automatically
 116 page of structure
 
 -- End 01-Jul
+
+
+-- Start 02 - Jul
 assignment discussion
 SErialization 
 Json
-
--- Start 02 - Jul
-
 -- End 02-Jul
 
 -- Start 30 Jun
