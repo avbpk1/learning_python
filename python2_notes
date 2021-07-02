@@ -1,3 +1,67 @@
+-- Start 03-Jul--
+
+--End 03-Jul
+
+-- Start 02-Jul
+PICKLE -- Python object serialization
+
+PYTHON_31_MAY_2021 7_2_2021, 2_39_38 PM.png
+
+Pickle is the module -- Dump and Undump
+
+f = open("person.dat","wb") # -- Write in binary mode
+p1 = Person("Srikatnh","srikanthpragada@yahoo.com")
+pickle.dump(p1,f) ## pickle an object
+print("object dumped");
+f.close()
+---Undump or deserialization
+
+Use case for picking, unpickling 
+Machine Learning Models -- PYTHON_31_MAY_2021 7_2_2021, 2_45_29 PM
+
+Binary Serialization -- collection of bytes
+
+PYTHON_31_MAY_2021 7_2_2021, 2_48_23 PM -- good picture for how object can be written into different formats i.e. bytes, json, xml
+
+In python -- dictionary can be converted to json
+JSON Module
+
+
+PYTHON_31_MAY_2021 7_2_2021, 2_56_34 PM -- picture for understanding
+json_demo
+
+dump(object,file)
+dumps(object) -- # difference between the above and this is not writing to a file
+jsonstr = json.dumps(p.__dict__)
+
+load(file)
+loads(str)
+people_dict = map(lambda p:p.__dict__,people) -- this will not work until you convert map to a list
+jsonstr = json.dumps(p.__dict__)
+
+people_dict = list(map(lambda p:p.__dict__,people)) -- list is required because map is a lazy object
+
+look at json_demo.py
+
+Assignment 1 -- You have a json to be loaded into memory
+convert the list of person json objects to list to person objects
+json to dictionary -- dictionary to person.
+
+PYTHON_31_MAY_2021 7_2_2021, 3_06_01 PM
+
+---SYS Module --
+
+--OS Module -- Operating system interaction--
+
+-- Assignments
+
+1) Accept a file and remove all blank lines from the file -- use a temporary file or use a list
+2) Accept 2 files and display the union of lines in the files -- duplicates should be removed
+3) 
+
+
+-- End -2-Jul
+
 -- Start 01-Jul
 Debugging Mode
 
