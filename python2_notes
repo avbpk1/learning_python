@@ -1,4 +1,27 @@
+-- Start 05 Jul
+Regular expressions
+-- End 05 Jul
+
 -- Start 03-Jul--
+57.png  -- potential problems are if the data is huge -- technique 1
+58.png -- technique2 -- green 
+2) Accept 2 files and display the union of lines in the files -- duplicates should be removed -- 
+    
+    pseudo code -- convert every thing from file 1 to a set and file 2 to set. 
+      with open(file1,"rt") as f1, open(file2,"rt") as f2:
+      lines = set(f1.readlines()) | set(f2.readlines())
+
+59.png -- gives the poutput of os.walk(r"c:\classroom\may31\demo") -- gives a tuple
+next(allfiles) will give a value each time -- generator
+
+count_python_files.py -- very good demo f how files are to be used. If u dont convert filter into list -- then it will be give an error.
+
+search_python_files.py -- pattern check -- use case is -- for e.g. if we want to know wher we used __init__
+
+--- Assignment related to walk
+Accept starting directory and search string and display all the files where the name contains the search string. Tip -- no need to open the file. Count and display the count. 
+If we can make it command line -- it would be even better.
+60.png -- on how it would like to run from a command line
 
 --End 03-Jul
 
@@ -56,7 +79,12 @@ PYTHON_31_MAY_2021 7_2_2021, 3_06_01 PM
 -- Assignments
 
 1) Accept a file and remove all blank lines from the file -- use a temporary file or use a list
-2) Accept 2 files and display the union of lines in the files -- duplicates should be removed
+2) Accept 2 files and display the union of lines in the files -- duplicates should be removed -- 
+    
+    pseudo code -- convert every thing from file 1 to a set and file 2 to set. 
+      with open(file1,"rt") as f1, open(file2,"rt") as f2:
+      lines = set(f1.readlines()) | set(f2.readlines())
+    
 3) 
 
 
