@@ -1,5 +1,60 @@
+Start 06 Jul
+Date Time 
+
+
+End 06 Jul
+
 -- Start 05 Jul
-Regular expressions
+Regular expressions -- Regular expression is a string with special characters to find patterns.
+For e.g. -- we want to search whether a string contains only certain patterns of characters
+
+Module RE is for regular experession.
+
+$ indicates that the end 
+
+PYTHON_31_MAY_2021 7_5_2021, 2_46_11 PM.png -- picture for re output. re.search returns match object.
+
+full_match.png
+Whole string is a match or not example
+
+Assignment 1 
+-- Accept a password and display whether it is valid or not. Valid password contains min 6 letters and should have alphabets, digits and the allowed special chars
+are * # @
+
+There is also a match -- this searches for the given pattern at the beginning of the string. 
+
+search
+full_match
+match
+findall -- searches for all occurances of the search string
+findall_examples.png -- all number search and atleast 3 digits search in the 2 last lines examples
+word_character_examples.png -- \w+ -- search for full word 
+
+split_with_non_digits_using_re_split.png  -- D+ is indicating split when you encounter one or more non digit and hence output is able to split when it is a space, or a comma ora : etc
+same thing above can be achieved with findall -- findall_non_digits_using_re_split.png
+
+sub -- is for substititute - can do a good job 
+replace_multi_with_sing_space_example.png
+
+-- Grouping Concept 
+extract_groups_name_digits.png 
+extract_groups_name_digits_example.png
+split
+
+Assignement 2 -- take a filename like -- mobiles.txt
+mobile_num_assignment.png
+
+Assignment 3 --
+Accept a file and replace one or more non word characters with a single space and write the new content into target file.
+
+page 128 of the course material
+
+compile is used to create a new pattern
+
+compile_pattern_examples.png
+
+datetime function
+
 -- End 05 Jul
 
 -- Start 03-Jul--
