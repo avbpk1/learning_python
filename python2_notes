@@ -1,6 +1,45 @@
-Start 06 Jul
-Date Time 
+Start -07 Jul
+REquest Module
+-- End 07 Jul
 
+Start 06 Jul
+Date Time Module
+
+Date Time Module has 4 different classes - date, time, datetime and timedelta
+
+from datetime import *
+
+from datetime import *
+d1 = date(2021,1,1)
+print(d1)
+print(date.min)
+d2 = date.today()
+print(d2)
+print(d2-d1)
+
+d3 = d2+timedelta(days=10)
+print(d3)
+
+page 131 of course material
+
+timedelta -- u can specify days, seconds, weeks, minutes, microseconds) etc
+strftimeformat class can be used to format date/time.
+
+Convert String to date time
+dob = "24-10-1998"
+d4 = datetime.strptime(dob,'%d-%m-%Y') ##strptime stands for string parse time
+print(d4)
+
+-- libdemo\list_tasks.py
+if len(parts) < 2 
+   continue # this will help tackle blank lines
+   
+Assignment 1 -- Display the data in the sorted order of the start date
+Assignment 2- Players.txt contains the name of the player and DOB -- YYYY-MM-DD. Display the name and the age of the player and in the sorted order of the age.Descending order of the age
+-- 61.png for reference. If invalid entries are there, ignore them
+
+Threading module. Thread Class can be used to handle multithreading -- page 136 of course material
+page 138
 
 End 06 Jul
 
