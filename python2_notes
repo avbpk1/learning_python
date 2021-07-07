@@ -1,6 +1,75 @@
+--Start 08 - Jul
+
+Beautifulsoup for HTML processing
+
+-- End 08 - Jul
 Start -07 Jul
-REquest Module
+Assignment 1 discussion from previous day
+sort_tasks.py -- pseudo code -- we need to convert the data into a data structure(list) -- tuple and then use lambda function. Append data to list after using sorted on tuple
+
+Multi Threading -- page 138 example
+
+Request Module
+picture to look at -- 62.png
+
+REST API URL
+api.github.com/users/srikanthpragada
+
+Convert JSON to dictionary and access the data
+---You have to install a library called REQUESTS (also called as http library) -- it will allow you to make a http request
+APIs
+a) Some require a Key for authentication -- this has to be created first
+b) Some require authentication details
+c) Some are free to use like github api 
+
+Example - Code
+---- Start of code
+#get git user info
+import requests
+user = "avbpk1"
+URL = f"api.github.com/users/{user}"
+
+resp = requests.get(URL)
+if resp.status_code == 200: #status code 200 in http request is success
+    print("Sorry!")
+    exit(1)
+
+details = resp.json() # Response text(JSON) to be converted to dictionary
+print(details['name'])
+print(details['company'])
+print(details['location'])
+
+
+--- End
+
+Assignment -- All the details that are not null are to be displayed.
+publicapis.io
+
+REST COUNTRIES gives an array of JSONs -- list of dictionaries
+
+countries = resp.cjson()
+for country in countries: # for country in sorted(countries,key = lambda c:['region']) -- note this is a powerful featuree i.e. keys in dictionary - remember this is a list of jsons
+   print(f"{country['name']:50} {country['region']}")
+
+list_top_10_countries.py -- Countries by population
+
+
+for country in sorted(countries,key = lambda c:['population'],reverse=True[:10]:) -- note this is a powerful featuree i.e. keys in dictionary - remember this is a list of jsons
+   print(f"{country['name']:50} {country['population']:12}")
+
+inr_to_usd.py
+
+Assignment 2 --
+Look for weather api and display it for a particular city
+
+------Some times data is in the form of html and not rest api --
+Take data from websites
+
+Take the user name and display the repositories of the user -- git repos
+
+--get/post/delete is also there
 -- End 07 Jul
+
 
 Start 06 Jul
 Date Time Module
