@@ -1,6 +1,52 @@
+-- Start 09Jul
+XML Parser 
+
+-- End 09 Jul
 --Start 08 - Jul
 
 Beautifulsoup for HTML processing
+
+If there is no api but there is a website which provides data -- 
+For e.g. Website publishes top 10 movies.
+On a website -- data is published via HTML. In order to extract data from there -- this can be handled via BeautifulSoup
+Beautifulsoup can be used to extract data from html 
+
+Requests module is still to be used -- Beautifulsopu is used for webscraping and it is a html parser
+
+soup.find_all('a')
+These are all dictionaries. 
+
+l = soup.find(id='link3') # finds all links with that id
+
+if we are interested in a paragraph with class attribute
+soup.p('class') # check it for proper syntax
+
+list_st_links.py
+
+URL = "http://www.srikanthtechnologies.com"
+
+resp = requests.get(URL)
+
+if resp.status_code != 200
+print('Sorry')
+exit(10)
+
+bs = BeautifulSoup(resp.text, 'html.parser')
+links = bs.find_all('a') #find all is looking for all tags -- in this case -- it is anchor tags
+for link in links:
+    if 'href' in link.attrs:
+        href = link.attrs['href']
+        if not href.startswith("http"):
+            if not href.startswith("/"):
+            
+            href = URL + "/" + href -- pre-append url to the href
+
+REST API is more dependable than webscraping 
+list_st_batches.py -- program to list all batches
+
+
+--ASsignment -- How many days to go for start of the batch -- 
+look at assignment output -- assignment_output_PYTHON_31_MAY_2021 7_8_2021, 3_23_05 PM.png
 
 -- End 08 - Jul
 Start -07 Jul
@@ -47,7 +93,7 @@ publicapis.io
 
 REST COUNTRIES gives an array of JSONs -- list of dictionaries
 
-countries = resp.cjson()
+countries = resp.json()
 for country in countries: # for country in sorted(countries,key = lambda c:['region']) -- note this is a powerful featuree i.e. keys in dictionary - remember this is a list of jsons
    print(f"{country['name']:50} {country['region']}")
 
