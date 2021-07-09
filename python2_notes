@@ -1,6 +1,19 @@
 -- Start 09Jul
 XML Parser 
 
+pip install html5 lib
+pip install lxml
+lxml has 2 parsers -- html , xml
+
+BeatuifulSoup(markup, "lxml.xml")
+BeatuifulSoup(markup,"xml")
+
+sample code -- books.xml -- list_books.py
+
+Request is not needed if we are not getting data from a website or an API
+f=open("book.xml",rt) # xml is a text file
+
+
 -- End 09 Jul
 --Start 08 - Jul
 
