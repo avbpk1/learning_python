@@ -1,3 +1,28 @@
+-- Start 10 July
+list_employee.py 
+table.sql
+
+Connecting to database using Python
+
+dbapi
+
+iport sqllite3
+import dbutil --self defined mobdule
+list_employee.py -- good example where the dbname and conn parameters can be parameterized in dbutil
+
+insert_employee.py -- ?,?,? -- to be replaced with a value
+
+salaries.txt
+update_salaries.py
+
+db_to_json.py -- master the data structures
+
+real python - take quizzes
+
+json.dump(employees,f)
+python exercises
+
+-- End 10 July
 -- Start 09Jul
 XML Parser 
 
